@@ -1,7 +1,7 @@
 # Copyright 2023 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
-name: 'Samoklava'
+name: 'Samoklava Mousekeys'
 on: workflow_dispatch
 jobs:
   build:
@@ -10,3 +10,5 @@ jobs:
     with:
       board: '["nice_nano_v2"]'
       shield: '["corne_left","corne_right"]'
+      custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
+      branches: '["zmkfirmware/zmk/main caksoylar/zmk/feat/mouse-keys-3.2"]'
